@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "short_name": "Resume",
+  "name": "Etienne Collin | Resume",
+  "description": "Etienne Collin's resume website, created using Rust!",
+  "start_url": ".",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "type": "image/ico",
+      "sizes": "256x256"
+    },
+    {
+      "src": "./images/profile.jpg",
+      "type": "image/webp",
+      "sizes": "3600x3600"
+    }
+  ]
+}
