@@ -15,5 +15,5 @@ trunk serve --open
 For release:
 
 ```bash
-trunk build --release
+trunk build --release -d docs
 ```
