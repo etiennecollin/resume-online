@@ -8,6 +8,9 @@ module.exports = {
   },
   theme: {
     extend: {},
+    screens: {
+      lg: "1175px",
+    },
   },
   variants: {
     extend: {},
