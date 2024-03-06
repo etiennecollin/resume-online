@@ -10,10 +10,10 @@ use crate::pages::{
 pub fn App() -> impl IntoView {
     provide_meta_context();
     view! {
-        <div class="grid gap-5 grid-cols-1 lg:grid-cols-5 h-screen">
+        <div class="grid gap-5 grid-cols-1 lg:grid-cols-5 lg:h-screen">
             <Sidebar/>
             <div class="flex flex-col flex-auto mx-auto lg:col-span-4 lg:w-11/12">
-                <div class="flex flex-col flex-auto gap-3 pb-4 lg:h-0 lg:py-4 lg:overflow-y-scroll lg:no-scrollbar">
+                <div class="flex flex-col flex-auto gap-3 pb-8 lg:py-8 lg:h-0 lg:overflow-y-scroll lg:no-scrollbar">
                     <About/>
                     <Education/>
                     <Experience/>
