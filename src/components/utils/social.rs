@@ -8,7 +8,9 @@ pub fn Social(
 ) -> impl IntoView {
     view! {
         <a href=href aria-label=label>
-            <i class=format!("{fa_icon} text-4xl text-slate-600 dark:text-slate-400")></i>
+            <i class=format!(
+                "{fa_icon} text-4xl text-slate-600 hover:text-amber-600 dark:text-slate-400 hover:dark:text-sky-400",
+            )></i>
         </a>
     }
 }
