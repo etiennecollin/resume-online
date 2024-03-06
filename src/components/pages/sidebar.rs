@@ -17,7 +17,7 @@ pub fn Sidebar() -> impl IntoView {
     let large = format!("{}{}{}{}{}", title, image, subtitle, contact, description);
 
     view! {
-        <div class="my-8 lg:col-span-1 flex flex-col grow">
+        <div class="my-2 lg:col-span-1 flex flex-col grow">
             <div class="flex flex-row justify-between items-center lg:hidden" inner_html=small></div>
             <div class="hidden justify-between items-center lg:block" inner_html=large></div>
             <div class="flex flex-row gap-5 mt-4">
