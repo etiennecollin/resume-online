@@ -4,12 +4,14 @@ My online resume.
 
 ## Requirements
 
-- Trunk
+```bash
+cargo install trunk
+```
 
 For dev:
 
 ```bash
-trunk serve --open
+trunk serve --address 0.0.0.0 --open
 ```
 
 For release:
