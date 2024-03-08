@@ -1,6 +1,6 @@
 use leptos::*;
 
-use crate::utils::empty::Empty;
+use crate::utils::{empty::Empty, subsection::Subsection};
 
 #[component]
 pub fn Event(
@@ -14,17 +14,17 @@ pub fn Event(
     let (list_signal, _) = create_signal(list);
 
     view! {
-        <section class="bg-lightbg-300 dark:bg-darkbg-700 rounded-xl py-2 px-5 grid">
+        <Subsection>
             <div>
                 <div class="flex justify-between">
                     <h3 class="text-xl text-lighttext-800 dark:text-darktext-200">{title}</h3>
-                    <p class="text-lighttext-700 dark:text-darktext-300">{date}</p>
+                    <p class="text-lighttext-800 dark:text-darktext-200">{date}</p>
                 </div>
-                <h4 class="text-lighttext-700 dark:text-darktext-300">{subtitle}</h4>
+                <h4 class="text-lighttext-800 dark:text-darktext-200">{subtitle}</h4>
             </div>
             <div class="px-1">
                 <Show when=move || { description_signal.get().is_some() } fallback=|| view! { <Empty/> }>
-                    <p class="text-lighttext-600 dark:text-darktext-400">{description_signal.get().unwrap()}</p>
+                    <p class="text-lighttext-700 dark:text-darktext-300">{description_signal.get().unwrap()}</p>
                 </Show>
                 <Show when=move || { list_signal.get().is_some() } fallback=|| view! { <Empty/> }>
                     <ul class="list-disc list-inside">
@@ -37,7 +37,6 @@ pub fn Event(
                     </ul>
                 </Show>
             </div>
-
-        </section>
+        </Subsection>
     }
 }

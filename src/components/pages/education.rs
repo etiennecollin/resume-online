@@ -12,7 +12,6 @@ pub fn Education() -> impl IntoView {
                 date="May 2022 - Aug 2025"
                 list=vec!["Current cumulative GPA: 4.211/4.3".to_owned()]
             />
-
             <Event
                 title="CEGEP Champlain St. Lawrence"
                 subtitle="DEC, Pure and Applied Science Program"
