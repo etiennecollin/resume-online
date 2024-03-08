@@ -6,10 +6,6 @@ pub fn Subsection(
     children: Children,
 ) -> impl IntoView {
     let (classes_signal, _) = create_signal(extra_classes);
-    let classes = format!("bg-lightbg-300 dark:bg-darkbg-700 rounded-xl py-2 p-3 lg:py-3 lg:p-5 {} print:break-before-all print:break-after-all print:break-inside-avoid", classes_signal.get().unwrap_or_default());
-    view! {
-        <section class=classes>
-            <div class="grid gap-2 pt-2">{children().nodes}</div>
-        </section>
-    }
+    let classes = format!("bg-lightbg-300 dark:bg-darkbg-700 rounded-xl py-2 px-3 {} print:break-before-all print:break-after-all print:break-inside-avoid", classes_signal.get().unwrap_or_default());
+    view! { <section class=classes>{children().nodes}</section> }
 }

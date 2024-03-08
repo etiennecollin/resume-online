@@ -5,7 +5,7 @@ use leptos::*;
 pub fn Awards() -> impl IntoView {
     view! {
         <Section title="Honors & Awards">
-            <Subsection>
+            <Subsection extra_classes="grid gap-2 pt-2".to_owned()>
                 <h2 class="text-xl text-lighttext-800 dark:text-darktext-200">"National Awards"</h2>
                 <Award
                     title="Schulich Leader Scholarship"
@@ -14,7 +14,7 @@ pub fn Awards() -> impl IntoView {
                     location="Canada"
                 />
             </Subsection>
-            <Subsection>
+            <Subsection extra_classes="grid gap-2 pt-2".to_owned()>
                 <h2 class="text-xl text-lighttext-800 dark:text-darktext-200">"Other Awards"</h2>
                 <Award
                     title="American Express Excellence Scholarship"
