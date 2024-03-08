@@ -9,7 +9,7 @@ pub fn Social(
     view! {
         <a href=href aria-label=label>
             <i class=format!(
-                "{fa_icon} text-4xl text-light-600 hover:text-accentlight-600 dark:text-dark-400 hover:dark:text-accentdark-400",
+                "{fa_icon} text-4xl text-lighttext-600 hover:text-lightaccent-600 dark:text-darktext-400 hover:dark:text-darkaccent-400",
             )></i>
         </a>
     }

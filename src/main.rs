@@ -6,7 +6,7 @@ fn main() {
     provide_meta_context();
     leptos::mount_to_body(|| {
         view! {
-            <main class="mx-auto px-12 bg-light-100 dark:bg-dark-900">
+            <main class="mx-auto px-12 bg-lightbg-100 dark:bg-darkbg-900">
                 <App/>
             </main>
         }

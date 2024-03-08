@@ -13,10 +13,12 @@ module.exports = {
       lg: "1175px",
     },
     colors: {
-      light: colors.stone,
-      accentlight: colors.amber,
-      dark: colors.gray,
-      accentdark: colors.blue,
+      lightbg: colors.stone,
+      lighttext: colors.stone,
+      lightaccent: colors.amber,
+      darkbg: colors.gray,
+      darktext: colors.gray,
+      darkaccent: colors.blue,
     },
   },
   variants: {
