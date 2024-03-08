@@ -1,4 +1,5 @@
 /** @type {import("tailwindcss").Config} */
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
@@ -10,6 +11,12 @@ module.exports = {
     extend: {},
     screens: {
       lg: "1175px",
+    },
+    colors: {
+      light: colors.stone,
+      accentlight: colors.amber,
+      dark: colors.gray,
+      accentdark: colors.blue,
     },
   },
   variants: {

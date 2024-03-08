@@ -1,14 +1,13 @@
 use crate::utils::social::Social;
 use leptos::*;
-use web_sys::HtmlElement;
 
 #[component]
 pub fn Sidebar() -> impl IntoView {
-    let title = "<h1 class=\"text-5xl font-semibold text-stone-900 dark:text-slate-100\">Hi, im Etienne</h1>";
-    let subtitle = "<h2 class=\"pt-2 text-xl text-stone-900 dark:text-slate-100\">Student & Schulich Leader</h2>";
-    let contact = "<a class=\"text-stone-800 dark:text-slate-200 no-underline hover:underline\" href=\"mailto:collin.etienne.contact@gmail.com\">collin.etienne.contact@gmail.com</a>";
+    let title = "<h1 class=\"text-5xl font-semibold text-light-900 dark:text-dark-100\">Hi, im Etienne</h1>";
+    let subtitle = "<h2 class=\"pt-2 text-xl text-light-900 dark:text-dark-100\">Student & Schulich Leader</h2>";
+    let contact = "<a class=\"text-light-800 dark:text-dark-200 no-underline hover:underline\" href=\"mailto:collin.etienne.contact@gmail.com\">collin.etienne.contact@gmail.com</a>";
     let description =
-        "<p class=\"pt-2 grow text-stone-800 dark:text-slate-200\">Built with love using Rust 🦀 and NeoVim 🖥️</p>";
+        "<p class=\"pt-2 grow text-light-800 dark:text-dark-200\">Built with love using Rust 🦀 and NeoVim 🖥️</p>";
     let image = "<img class=\"rounded-full w-1/3 lg:w-auto m-4 mb-2 lg:m-4 hover:animate-spin\" src=\"assets/images/profile.jpg\" alt=\"Profile picture\"/>";
 
     let small = format!(
