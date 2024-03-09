@@ -8,3 +8,10 @@ edition = "2021"
 [dependencies]
 leptos = { version = "0.6.9", features = ["csr", "serde"] }
 leptos_meta = "0.6.9"
+
+[profile.release]
+opt-level = "z"
+codegen-units = 1
+lto = "fat"
+panic = "abort"
+strip = "symbols"
