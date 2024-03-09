@@ -26,7 +26,7 @@ pub fn Event(
                 <p class="text-lighttext-600 dark:text-darktext-400">{description_signal.get().unwrap()}</p>
             </Show>
             <Show when=move || { list_signal.get().is_some() } fallback=|| view! { <Empty/> }>
-                <ul class="list-disc list-outside px-4 lg:px-6">
+                <ul class="list-disc list-outside pl-8 lg:pl-6">
                     {list_signal
                         .get()
                         .unwrap()
